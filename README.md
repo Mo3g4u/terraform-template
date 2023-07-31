@@ -32,5 +32,3 @@ $ terraform apply
 ```
 $ terraform destroy
 ```
-
-## 踏み台サーバへの接続方法
