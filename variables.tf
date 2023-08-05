@@ -1,24 +1,24 @@
 variable "region" {
   description = "AWS region"
   default     = "ap-northeast-1"
+  type        = string
 }
 
 variable "project" {
-  default = "terraform-template"
+  description = "project name"
+  default     = "terraform-template"
+  type        = string
 }
 
 variable "env" {
-  default = "dev"
+  description = "environment type"
+  default     = "dev"
+  type        = string
 }
 
 variable "availability_zones" {
-  default = ["ap-northeast-1c", "ap-northeast-1d"]
+  description = "availability zones"
+  default     = ["ap-northeast-1c", "ap-northeast-1d"]
+  type        = list(string)
 }
 
-variable "rds_scaling_min_capacity" {
-  default = 0.5
-}
-
-variable "rds_scaling_max_capacity" {
-  default = 1
-}

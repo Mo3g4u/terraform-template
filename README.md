@@ -32,3 +32,12 @@ $ terraform apply
 ```
 $ terraform destroy
 ```
+
+## tflint の実行コマンド
+
+```sh
+% tflint --recursive --config $(pwd)/.tflint.hcl --format compact
+```
+
+参考ページ
+[TFLint: Terraform の Linter を活用しよう](https://kakakakakku.hatenablog.com/entry/2023/08/03/133521)

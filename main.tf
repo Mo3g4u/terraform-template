@@ -52,6 +52,7 @@ module "bastion" {
 # -------------------------------------
 # Database
 # -------------------------------------
+/*
 module "db" {
   source = "./modules/db"
 
@@ -62,3 +63,4 @@ module "db" {
   rds_scaling_min_capacity = var.rds_scaling_min_capacity
   rds_scaling_max_capacity = var.rds_scaling_max_capacity
 }
+*/
