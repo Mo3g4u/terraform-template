@@ -1,6 +1,14 @@
-variable "project" {}
-variable "env" {}
+variable "project" {
+  description = "project"
+  type        = string
+}
+variable "env" {
+  description = "env"
+  type        = string
+}
 
 variable "availability_zones" {
-  default = ["ap-northeast-1c", "ap-northeast-1d"]
+  description = "availability zones"
+  type        = list(string)
+  default     = ["ap-northeast-1c", "ap-northeast-1d"]
 }
