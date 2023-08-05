@@ -33,7 +33,15 @@ $ terraform apply
 $ terraform destroy
 ```
 
-## tflint の実行コマンド
+## tflint に対応しました
+
+install
+
+```sh
+% brew install tflint
+```
+
+実行（すべてのルールを有効化しています）
 
 ```sh
 % tflint --recursive --config $(pwd)/.tflint.hcl --format compact
